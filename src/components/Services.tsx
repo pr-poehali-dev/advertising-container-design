@@ -5,22 +5,22 @@ const Services = () => {
     {
       title: "Размещение в подъездах",
       description: "Стенды и плакаты в холлах и на лестничных площадках",
-      icon: "🏠",
+      symbol: "ПОДЪЕЗД",
     },
     {
       title: "Реклама в лифтах",
       description: "Эффективные форматы в замкнутом пространстве",
-      icon: "🛗",
+      symbol: "ЛИФТ",
     },
     {
       title: "Информационные стенды",
       description: "Постоянные конструкции для долгосрочного размещения",
-      icon: "📋",
+      symbol: "СТЕНД",
     },
     {
       title: "Почтовые ящики",
       description: "Размещение рекламы на почтовых ящиках",
-      icon: "📬",
+      symbol: "ПОЧТА",
     },
   ];
 
@@ -41,7 +41,9 @@ const Services = () => {
               key={index}
               className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
             >
-              <div className="text-4xl mb-4">{service.icon}</div>
+              <div className="bg-purple-100 text-purple-600 px-3 py-2 rounded-lg text-sm font-bold mb-4 inline-block">
+                {service.symbol}
+              </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
                 {service.title}
               </h3>
